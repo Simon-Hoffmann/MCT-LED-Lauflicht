@@ -1,23 +1,23 @@
 ; ========================================================================================
-; | Modulname: main.s 									| Prozessor: LPC1778 	 		 |
+; | Modulname: main.s 					| Prozessor: LPC1778 	 	 |
 ; |--------------------------------------------------------------------------------------|
-; | Ersteller: 	Simon Hoffmann und Aleksei Svatko		| Datum: 20.10.2020      		 |
+; | Ersteller: 	Simon Hoffmann und Aleksei Svatko	| Datum: 20.10.2020     	 |
 ; |--------------------------------------------------------------------------------------|
-; | Version: 1.0	| Projekt: 	LED Lauflicht			| Assembler: ARM-ASM 	 		 |
+; | Version: 1.0	| Projekt: 	LED Lauflicht	| Assembler: ARM-ASM 	 	 |
 ; |--------------------------------------------------------------------------------------|
 ; | Aufgabe: Ein LED Lauflicht erzeugen welches durch knopfdruck aktiviert werden	 |
-; | 		kann, sowie die richtung der LEDs Aendern. Durch druecken zweier		 	 |
-; | 		knoepfe, soll ein warnlicht erscheinen.					 					 |
+; | 		kann, sowie die richtung der LEDs Aendern. Durch druecken zweier 	 |
+; | 		knoepfe, soll ein warnlicht erscheinen.					 |
 ; |--------------------------------------------------------------------------------------|
-; | Bemerkungen: 									 									 |
-; | 											 										 |
-; | 											 										 |
+; | Bemerkungen: 									 |
+; | 											 |
+; | 											 |
 ; |--------------------------------------------------------------------------------------|
-; | Aenderungen: 																		 |
-; | 	22.10.2020 		Simon Hoffmann 		Blinkendes LED 			 				     |
-; | 	29.10.2020		Aleksei Svatko		LED Lauflicht			 					 |
-; |		05.11.2020		Simon Hoffmann		Aktivierung durch Taster					 |
-; |		12.11.2020		Aleksei Svatko		LED Richtung und Warnblinker				 |
+; | Aenderungen: 									 |
+; | 	22.10.2020 		Simon Hoffmann 		Blinkendes LED 		         |
+; | 	29.10.2020		Aleksei Svatko		LED Lauflicht			 |
+; |	05.11.2020		Simon Hoffmann		Aktivierung durch Taster	 |
+; |	12.11.2020		Aleksei Svatko		LED Richtung und Warnblinker	 |
 ; ========================================================================================
 ; ------------------------------- includierte Dateien ------------------------------------
 	include LPC1778_REG_ASM.inc	
@@ -44,7 +44,7 @@ main
 	
 	;Laeuft bis Taster gedrueckt 
 	;Ueberprueft ob Tasten gedrueckt wurden um Lauflicht zu starten in verschiedenen richtungen
-	;oder wenn beide gedrückt werden ein Warnlicht auslöst
+	;oder wenn beide gedrÃ¼ckt werden ein Warnlicht auslÃ¶st
 button
 	;Prueft ob erster Taster gedrueckt wurde
 	ldr R0, =LPC_GPIO0_PIN
