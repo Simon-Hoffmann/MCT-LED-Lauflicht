@@ -1,0 +1,10 @@
+;Register
+
+LPC_GPIO0_DIR		equ	(0x20098000)
+LPC_GPIO0_PIN		equ	(0x20098014)	
+LPC_GPIO0_SET		equ	(0x20098018)	
+LPC_GPIO0_CLR		equ	(0x2009801C)	
+
+
+	
+		END
